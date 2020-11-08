@@ -5,7 +5,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy:s3": "sls client deploy --no-config-change --no-policy-change --no-cors-change",
+    "deploy:s3": "sls client deploy --no-config-change --no-policy-change --no-cors-change --no-confirm",
     "build:deploy:s3": "npm run build && npm run deploy:s3",
     "cloudfront:setup": "sls deploy",
     "cloudfront:invalidateCache": "sls invalidateCloudFrontCache",
